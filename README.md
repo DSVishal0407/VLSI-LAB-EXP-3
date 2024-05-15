@@ -1,13 +1,16 @@
-# SIMULATION AND IMPLEMENTATION OF BINARY MULTIPLIER
+**SIMULATION AND IMPLEMENTATION OF BINARY MULTIPLIER**
 
-## AIM:
+**AIM:**
+
  To simulate and synthesis multiplier using Xilinx ISE.
 
-## APPARATUS REQUIRED:
+**APPARATUS REQUIRED:**
+
 Xilinx 14.7
 Spartan6 FPGA
   
-## PROCEDURE:
+**PROCEDURE:**
+
 STEP:1  Start  the Xilinx navigator, Select and Name the New project.
 STEP:2  Select the device family, device, package and speed.       
 STEP:3  Select new source in the New Project and select Verilog Module as the Source type.                       
@@ -20,12 +23,14 @@ STEP:9  In the Design Object List Window, enter the pin location for each pin in
 STEP:10 Double click on the Implement Design and double click on the Generate Programming File to create a bitstream of the design.(.v) file is converted into .bit file here.
 STEP:11  On the board, by giving required input, the LEDs starts to glow light, indicating the output.
 
-## 2 Bit Multiplier:
+**2 Bit Multiplier:**
 
-### Logic Diagram:
+**Logic Diagram:**
+
 ![image](https://github.com/navaneethans/VLSI-LAB-EXP-3/assets/6987778/7713750f-65e6-41c0-8082-5005eac4031c)
 
-### Verilog code:
+**Verilog code:**
+
 ```
 module HalfAdder(a,b,sum,carry);
 input a,b;
@@ -47,15 +52,18 @@ HalfAdder h1(w3,w4,y[2],y[3]);
 endmodule
 ```
 
-### Output Waveform:
+**Output Waveform:**
+
 ![image](https://github.com/DSVishal0407/VLSI-LAB-EXP-3/assets/163637297/7b4be87a-bbff-45dd-b711-c93cb2fcb599)
 
-## 4 Bit Multiplier:
+**4 Bit Multiplier:**
 
-### Logic Diagram:
+**Logic Diagram:**
+
 ![image](https://github.com/navaneethans/VLSI-LAB-EXP-3/assets/6987778/d95215dd-8cf1-4e08-93cc-96adfdd7fbdc)
 
-### Verilog code:
+**Verilog code:**
+
 ```
 module  ha (a,b,s,c);
 input a,b;
@@ -93,10 +101,12 @@ fa fa8 (w[11],x[3]&y[3],w[17],z[6],z[7]);
 endmodule
 ```
 
-### Output Waveform:
+**Output Waveform:**
+
 ![image](https://github.com/DSVishal0407/VLSI-LAB-EXP-3/assets/163637297/a80f84d0-f3e0-4bc2-afec-d81ecd4cce83)
 
-## Result:
+**Result:**
+
 Hence the 2 bit multiplier and 4 bit multiplier are simulated and synthesised using Xilinx ISE. 
 
 
